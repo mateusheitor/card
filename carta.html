@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card,
+.envelope {
+  background: #fff;
+  box-shadow: -1px 8px 3px 0 rgba(0, 0, 0, 0.6);
+  height: 21em;
+  padding: 2em;
+  position: relative;
+  width: 15em;
+}
+
+.envelope {
+  background: #cb231c;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  margin: -2em -2em;
+  position: absolute;
+  transform: rotate(-8deg);
+  z-index: -1;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  width: 90%;
+}
+em {
+  color: #cc2119;
+  font-style: normal;
+}
+.heart {
+  bottom: 4em;
+  position: absolute;
+  right: 4em;
+}
+.heart::before,
+.heart::after {
+  background-color: #cd231b;
+  border-radius: 50px 50px 0 0;
+  content: "";
+  height: 25px;
+  left: 15px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 15px;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* general styling */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  font: 16px/1.05 "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+}
+</style>
+<title>Amo cada detalhe seu</title>
+</head>
+<body>
+<div class="container">
+
+  <div class="card">
+    <div class="envelope"></div>
+    <p>Você é extremamente especial pra mim </p>
+    <p>E você tem sido uma das coisas mais importantes pra mim </p>
+    <p>E você tem sido uma das coisas mais importantes do meu dia a dia </p>
+    <p>Você se tornou parte dele, da minha rotina </p>
+    <p>E amo cada detalhe seu, dos mais simples aos mais complexos </p>
+    <p>Eu te amo por inteira</p>
+
+    <button class="heart" onclick="window.location.href='poema.html'"></button>
+
+  </div>
+
+</div>
+</body>
+</html></div>
